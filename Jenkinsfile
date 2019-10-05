@@ -1,8 +1,8 @@
 node (label: 'Maven2'){ 
-   //def mvnHome = tool 'M3'
+   def mvnHome = tool 'maven'
 
    stage('Checkout Code') { 
-      git 'https://github.com/maping/java-maven-calculator-web-app.git'
+      git 'https://github.com/Gajendra95/java-maven-calculator-web-app.git'
    }
    stage('JUnit Test') {
       if (isUnix()) {
