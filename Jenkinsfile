@@ -1,4 +1,4 @@
-node 'Maven2'{ 
+node (label: 'Maven2'){ 
    //def mvnHome = tool 'M3'
 
    stage('Checkout Code') { 
